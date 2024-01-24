@@ -1,0 +1,17 @@
+
+
+main , div { 
+    text-align: center;
+    width: 50%;
+  margin: auto;
+    }
+
+#p1 {
+    font-size: 2em
+
+}    
+
+#p2 {
+    color:red ;
+    margin-left: 0%;
+}
