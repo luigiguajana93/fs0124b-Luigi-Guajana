@@ -1,0 +1,62 @@
+#base{
+    margin: 15px;
+    border: 15px;
+    padding: 15px;
+    max-width: 500px;
+}
+#layout {
+    margin: 15px;
+    border: 15px;
+    padding: 15px;
+    max-width: 500px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#centrale {
+    margin: 15px;
+    border: 15px;
+    padding: 15px;
+    max-width: 500px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: white;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    
+
+}
+
+#video {
+    border-radius: 15%;
+}
+
+#lista{
+    list-style:circle;
+}
+
+#lista2 {
+    list-style:decimal;
+}
+
+#titolo{
+    font-size: xx-large;
+}
+
+/* IMPOSTAZIONI GENERALI */
+
+/* HEADER */
+
+/* MAIN */
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
+
