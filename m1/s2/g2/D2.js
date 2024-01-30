@@ -8,16 +8,18 @@ let secondo = 40;
 if(primo > secondo){
                     console.log("primo è il più grande")
                     }
-  else{
-  console.log(" secondo è il più grande")
-  }
+  else if(primo < secondo){
+                  console.log(" secondo è il più grande")
+                          }
+  else {console.log("i numeri sono uguali");
+}
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
 let number = 5;
-if(number === 5 ){console.log("Not Equal")}
+if(number !== 5 ){console.log("Not Equal")}
 else {console.log("IS Equal")}
 
 
