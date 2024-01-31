@@ -98,7 +98,7 @@ else {console.log("Numero pari")}
 
 // ESERCIZIO 10
   //Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 4
+  let val = 7
   if (val < 5) {
       console.log("Meno di 5");
     } else if (val < 10) {
