@@ -132,14 +132,9 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
   const carattere = starWarsCharacters[i]
 
   if (carattere.gender === 'female') 
-  {
-    const oggetto = {
-      name: carattere.name,
-      gender: carattere.gender,
-    }
 
-    femaleCharacters.push(oggetto)
-  }
+    femaleCharacters.push(carattere)
+  
 }
 
 console.log(femaleCharacters)
