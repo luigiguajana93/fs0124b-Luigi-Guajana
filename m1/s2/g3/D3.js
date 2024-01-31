@@ -113,7 +113,7 @@ let charactersNames = [];
   Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */
 
-for(let i=0; i < starWarsCharacters.length; i++)
+for(let i=0; i < starWarsCharacters.lenght; i++)
 { const carattere =starWarsCharacters[i]
 
   charactersNames.push(carattere.name)
@@ -128,7 +128,7 @@ console.log(charactersNames);
 
 const femaleCharacters = []
 
-for (let i = 0; i < starWarsCharacters.length; i++) {
+for (let i = 0; i < starWarsCharacters.lenght; i++) {
   const carattere = starWarsCharacters[i]
 
   if (carattere.gender === 'female') 
@@ -163,7 +163,7 @@ const eyeColor = {
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
 
-for ( let i=0; i< starWarsCharacters.length;i++){
+for ( let i=0; i< starWarsCharacters.lenght;i++){
   const carattere = starWarsCharacters[i]
 
   switch(carattere.eye_color){
@@ -189,7 +189,7 @@ console.log(eyeColor)
 let i= 0;
 let crewMass = 0;
 
-while(i < starWarsCharacters.length) {
+while(i < starWarsCharacters.lenght) {
   let char = starWarsCharacters[i]
   crewMass = crewMass + parseInt(char.mass)
   i++
@@ -222,7 +222,7 @@ else if (crewMass >= 900 && crewMass <= 1000){console.log("Critical Load : Over 
     la riassegnazione del valore corrispondente o creare un nuovo array)
 */
 
-for(let i=0; i < starWarsCharacters.length;i++)
+for(let i=0; i < starWarsCharacters.lenght;i++)
 {
   if(starWarsCharacters[i].gender === 'n/a') { starWarsCharacters[i].gender = "robot"}
 }
