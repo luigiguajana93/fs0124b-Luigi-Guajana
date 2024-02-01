@@ -110,15 +110,21 @@ console.log(reverseString());
  La funzione deve rendere maiuscola la prima lettera di ogni parola 
  contenuta nella stringa.
 */
-let str ="epicode è una bella scuola "
 
-function upperFirst(str) {
-    for(let i=0; i< str.length;i++) {
-    if(!str) {return str;}
-    else { return str[0].toUpperCase() + str.slice(1);} 
-                                    }
-    }
-console.log(upperFirst(str))
+
+function upperFirst(stringa) {
+    let parole = stringa.split(' ');
+    let risultato = [];
+     for(let i=0; i < parole.length;i++){
+        let primaLettera = parole[i][0].toUpperCase();
+        let restoParola = parole[i].slice(1)
+        let parolaCompleta = primaLettera + restoParola;
+
+        risultato.push(parolaCompleta);
+     }
+     return risultato.join(' ');
+}
+console.log(upperFirst('epicode è una bella scuola'));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
