@@ -36,7 +36,7 @@ tra un numero fornito come parametro e 19.
 function crazyDiff (a,b=19) {
 
 let diffabs=0;
-diffabs = (Math.abs(a) - b);
+diffabs = Math.abs(a - b);
 
 if(a>19) {return diffabs*3;}
 
@@ -69,7 +69,17 @@ console.log(boundary(19))
  ritornare la stringa originale senza alterarla.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function epify(stringa){
+
+    if(!stringa.startsWith('EPICODE')){
+        return 'EPICODE ' + stringa
+    }
+return stringa;
+}
+console.log(epify(' è la scuola per sviluppatori '))
+
+
+
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro.
