@@ -113,7 +113,7 @@ let charactersNames = [];
   Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */
 
-for(let i=0; i < starWarsCharacters.lenght; i++)
+for(let i=0; i < starWarsCharacters.length; i++)
 { const carattere =starWarsCharacters[i]
 
   charactersNames.push(carattere.name)
@@ -128,7 +128,7 @@ console.log(charactersNames);
 
 const femaleCharacters = []
 
-for (let i = 0; i < starWarsCharacters.lenght; i++) {
+for (let i = 0; i < starWarsCharacters.length; i++) {
   const carattere = starWarsCharacters[i]
 
   if (carattere.gender === 'female') 
@@ -163,7 +163,7 @@ const eyeColor = {
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
 
-for ( let i=0; i< starWarsCharacters.lenght;i++){
+for ( let i=0; i< starWarsCharacters.length;i++){
   const carattere = starWarsCharacters[i]
 
   switch(carattere.eye_color){
@@ -189,7 +189,7 @@ console.log(eyeColor)
 let i= 0;
 let crewMass = 0;
 
-while(i < starWarsCharacters.lenght) {
+while(i < starWarsCharacters.length) {
   let char = starWarsCharacters[i]
   crewMass = crewMass + parseInt(char.mass)
   i++
@@ -222,9 +222,9 @@ else if (crewMass >= 900 && crewMass <= 1000){console.log("Critical Load : Over 
     la riassegnazione del valore corrispondente o creare un nuovo array)
 */
 
-for(let i=0; i < starWarsCharacters.lenght;i++)
+for(let i=0; i < starWarsCharacters.length;i++)
 {
-  if(starWarsCharacters[i].gender === 'n/a') { starWarsCharacters[i].gender = "robot"}
+  if(starWarsCharacters[i].gender === 'n/a') {starWarsCharacters[i].gender = "robot"}
 }
   console.log(starWarsCharacters)
 
@@ -245,7 +245,7 @@ for(let i=0; i < starWarsCharacters.lenght;i++)
   discorsivo (a tuo piacimento).
 */
 
-let elemento = Math.floor(Math.random() * starWarsCharacters.lenght)
+let elemento = Math.floor(Math.random() * starWarsCharacters.length) + 1;
 console.log("il personaggio scelto si chiama" + elemento.name + "è alto/a" + elemento.height + "pesa" + elemento.mass + 
               "ha i capelli" + elemento.hair_color + "ha il colore della pelle" + elemento.skin_color + "ha gli occhi"+
               elemento.eye_color + "il suo anno di nascita è" + elemento.birth_year + "il suo genere è"+ elemento.gender )
