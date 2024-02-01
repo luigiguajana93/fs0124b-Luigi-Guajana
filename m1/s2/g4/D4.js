@@ -130,14 +130,32 @@ una stringa.
  della stringa originale.
 */
 
+function cutString(stringa) {
+    let parolaNuova = "";
+    for (let i = 0; i <stringa.length; i++){
+        if (i===0 ||i===stringa.length-1){
+
+        }else{
+            parolaNuova+= stringa[i];
+        }
+    }
+    return parolaNuova;
+}
+console.log(cutString("epicode"));
 
 
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come
   parametro un numero n e ritorna un'array contenente n numeri 
   casuali inclusi tra 0 e 10.
 */
-function giveMeRandom (n)
-/* SCRIVI QUI LA TUA RISPOSTA */
+
+function giveMeRandom (n) {
+    let array = []
+    for (let i = 0; i < n; i++) {
+        array.push(Math.floor(Math.random() * 11));
+      }
+      return array;
+}
+console.log(giveMeRandom(10));
