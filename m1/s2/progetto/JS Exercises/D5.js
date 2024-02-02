@@ -163,16 +163,48 @@ for( let i=0; i<charactersArray.length;i++) {
 
 
 switch (lettera) {
+  case 'a': alfabeto = 1;
+            break;
+  case 'b': alfabeto = 2;
+            break;
+  case 'c': alfabeto = 3;
+            break;
+  case 'd': alfabeto = 4;
+            break;
+  case 'e': alfabeto = 5;
+            break;
+  case 'f': alfabeto = 6;
+            break;                             
   case 'g': alfabeto = 7;
             break;
-  case 'n': alfabeto = 14;
+  case 'h': alfabeto = 8;
+            break;
+  case 'i': alfabeto = 9;
+            break;
+  case 'l': alfabeto = 10;
+            break;
+  case 'm': alfabeto = 11;
+            break;
+  case 'n': alfabeto = 12;
+            break;
+  case 'o': alfabeto = 13;
+            break;
+  case 'p': alfabeto = 14;
+            break;
+  case 'q': alfabeto = 15;
+            break;
+  case 'r': alfabeto = 16;
+            break;
+  case 's': alfabeto = 17;
+            break;
+  case 't': alfabeto = 18;
             break;
   case 'u': alfabeto = 21;
             break;
-  case 'z': alfabeto = 26;
-            break;
-  case 'd': alfabeto = 4;
-            break;        
+  case 'v': alfabeto = 22;
+            break; 
+  case 'z': alfabeto = 23;
+            break      
 }
 
 arr.push(alfabeto);
