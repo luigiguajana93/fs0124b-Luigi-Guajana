@@ -106,7 +106,8 @@
 
       const changePcontent = function () {
         let cambioP= document.querySelectorAll('div p');
-        cambioP.innerText = 'Testo modificato';
+        cambioP.forEach(el => el.innerHTML = "Testo modificato");
+        
       }
       changePcontent()
 
@@ -183,7 +184,14 @@
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
       */
 
-      const revealFooterLink = function () {}
+      const revealFooterLink = function () {
+        let footer = document.querySelector('footer');
+        footer.addEventListener('click',function(){
+        let url= footer.querySelector('a').href
+        alert(url)
+        })
+      }
+      revealFooterLink()
 
       /* ESERCIZIO 11
        Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
