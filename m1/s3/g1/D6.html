@@ -170,12 +170,12 @@
       */
 
       const makeItClickable = function () {
-        const click = document.querySelector('h1');
+        let click = document.querySelector('h1');
         click.addEventListener('click', function(){
-          
-                click.pop();
+                for(i=0;i<click.length;i++)
+                click.slice(length, 1);
               
-        })
+        })  //NON completo 
 
       }
       makeItClickable()
