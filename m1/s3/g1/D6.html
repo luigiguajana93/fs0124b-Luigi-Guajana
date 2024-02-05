@@ -171,11 +171,10 @@
 
       const makeItClickable = function () {
         let click = document.querySelector('h1');
-        click.addEventListener('click', function(){
-                for(i=0;i<click.length;i++)
-                click.slice(length, 1);
+        click.addEventListener('click', function(){               
+        click.innerText = click.innerText.slice(0, -1);
               
-        })  //NON completo 
+        })   
 
       }
       makeItClickable()
