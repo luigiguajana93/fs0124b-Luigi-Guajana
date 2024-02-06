@@ -278,14 +278,30 @@ millenians()
 
 function sommaAnni(){
   const somma= movies.Year.reduce((temp,curr)=>temp+curr,0)
-  console.log(somma);
+  
 }
-sommaAnni()
+
 
 /* ESERCIZIO 14 (find)
-  Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
+  Scrivi una funzione per ottenere dall'array fornito uno 
+  specifico film (la funzione riceve un imdbID come parametro).
 */
 
+function specifico(n){
+  const spec = movies.find(movie => movie.imdbID === n);
+
+console.log(spec);
+}
+specifico("tt2395427")
+
 /* ESERCIZIO 15 (findIndex)
-  Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
+  Scrivi una funzione per ottenere dall'array fornito 
+  l'indice del primo film uscito nell'anno fornito come parametro.
 */
+
+function annospecifico(n){
+  const spec = movies.findIndex(movie => movie.Year === n);
+
+console.log(spec);
+}
+annospecifico("2005")
