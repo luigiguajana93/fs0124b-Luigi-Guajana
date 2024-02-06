@@ -30,6 +30,7 @@ for (let i=0; i<10 ;i++){
   array.push(gen);
 }
 console.log(array);
+return array;
 }
 random()
 /* ESERCIZIO 3 (filter)
@@ -37,6 +38,7 @@ random()
   da un array composto da soli valori numerici
 */
 const numeri = [1,2,3,4,5,6,7,8,9,10];
+
 function pari(){
  const risultato =numeri.filter((numero) => numero % 2 === 0);
  console.log(risultato);
@@ -54,7 +56,7 @@ console.log(numeroFinale);
 }
 somma()
 
-/* ESERCIZIO 5 (reduce)
+/* ESERCIZIO 5 (reduce  )
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 function somma2(){
@@ -229,7 +231,8 @@ const movies = [
 */
 function vecchio(){
 
-  movies.forEach( )
+  const annoNum = Number(movies.Year);
+  movies.Year.forEach(movie => {annoNum   } );
   
 }
 
