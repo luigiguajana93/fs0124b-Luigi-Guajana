@@ -1,31 +1,23 @@
+const input = document.getElementById('input');
+const button =document.getElementById('addButton');
+const lista = document.getElementById('lista');
 
-salvabottone.addEventListener('click',function(){
-            
-            
-    const salvabottone = document.querySelector('#invia')
-    const lista = document.querySelector('#lista')
-    const input = document.querySelector('#task')
-        
-
-        let li= document.createElement('li');
-        li.innerText=input.value
-        li.classList.add('task')
-        li.addEventListener('click',function(){
-            li.classList.toggle('completed')
-        })
-
-        let button = document.creatElement('button')
-        button.innerText = 'Elimina'
-
-        button.addEventListener('click',function(){
-            li.remove()
-        })
-
-        li.append(button)
-        lista.append(li)
-
+button.addEventListener('click',function() {
+    let contenitore = document.createElement('li');
+    lista.append(contenitore);
+    contenitore.innerText= input.value;
+    let bottone = document.createElement('button');
+    contenitore.append(bottone);
+    bottone.innerText= "Elimina";
+    bottone.addEventListener('click',()=>{
+        contenitore.remove();
     })
-
-
-
     
+    contenitore.classList.add("elemento");
+    contenitore.addEventListener('click',()=>{
+        contenitore.classList.toggle("completed");
+    })
+    
+})
+
+
