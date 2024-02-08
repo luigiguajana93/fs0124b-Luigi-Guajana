@@ -1,0 +1,65 @@
+*,:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: lightgreen;
+}
+
+h3{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tombola{
+    width: 600px;
+    
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 5px 5px 5px 5px;
+    font-weight: bold;
+}
+
+
+.tabella{
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    color: brown;
+}
+
+.numero{
+    flex: 0 1 calc(100% / 10);
+    text-align: center;
+    padding: 25px 0;
+    font-size: large ;
+}
+
+.completed{
+
+    background-color: lightgreen;
+    
+}
+
+#lista li{
+        padding: 10px;
+        display: inline-flex;
+        font-size: large;
+        border: 4px solid;
+        border-color: brown;
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        background-color: lightyellow;
+        
+}
+
+div #numrandom{
+    font-size: large;
+
+    background-color: brown;
+    color: white;
+}
