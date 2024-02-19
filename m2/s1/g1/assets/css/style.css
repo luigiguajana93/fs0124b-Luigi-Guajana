@@ -308,4 +308,7 @@ footer a {
             font-size: 2.2rem;
 }
 
+@media print {
+    
+}
 }
