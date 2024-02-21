@@ -1,0 +1,23 @@
+html{
+  color: darkred;
+}
+header{
+  background-color: lightgoldenrodyellow;
+}
+
+
+main{
+  background-color:aliceblue;
+}
+
+
+main h1{
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}

@@ -1,0 +1,58 @@
+html{
+    color: brown;
+    font-weight:lighter;
+}
+.card{
+    width: 385px;
+    width: 275px;
+    padding: 20px;
+      
+    
+}
+.card img {
+    width:335px;
+    height: 275px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.subcard{
+   
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    padding: 30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.subcard button {
+    background-color: rgb(235, 226, 99);
+    border: none;
+    border-radius: 10px;
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: brown;
+}
+
+.subcard p:nth-child(1){
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.subcard p:nth-child(2){
+    
+    align-self: flex-start;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.subcard p:nth-child(3){
+    align-self: flex-end;
+    position: relative;
+    top: -25px;
+}
