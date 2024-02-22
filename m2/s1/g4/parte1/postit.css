@@ -1,0 +1,71 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #666666;
+
+}
+.container{
+    margin: auto;
+    padding-top: 5rem;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 700px;
+    
+}
+.post:nth-child(1),:nth-child(5),:nth-child(7){
+    background: rgb(249,250,200);
+    background: linear-gradient(180deg, rgba(249,250,200,1) 35%, rgba(166,161,161,1) 100%);
+    transform: rotate(-5deg);
+    animation-name: start;
+    animation-duration: 0.5s;
+
+}
+
+.post:nth-child(2),:nth-child(4),:nth-child(8){
+    background: rgb(184,220,186);
+background: linear-gradient(180deg, rgba(184,220,186,1) 35%, rgba(166,161,161,1) 100%);
+    transform: rotate(5deg);
+    animation-name: start;
+    animation-duration: 2s;
+}
+
+.post:nth-child(3),:nth-child(6){
+    background: rgb(172,171,197);
+    background: linear-gradient(180deg, rgba(172,171,197,1) 35%, rgba(166,161,161,1) 100%); 
+    transform: rotate(-5deg);
+    animation-name: start;
+    animation-duration: 2s;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    width: 280px;
+    height: 230px;
+    margin: 10px;
+    text-align: start;
+    transition-duration: 2s;
+
+}
+
+@keyframes start {
+    from{transform:scale(100,100)}
+}
+
+.post:hover{
+
+transform: translateZ(100px);
+z-index: 1;
+box-shadow:  5px 5px 5px #000000
+}
+
+.post h1 {
+    font-size: 3.3rem;
+    padding: 30px;
+}
+.post p {
+    font-size: 1.3rem;
+    padding: 30px;
+    padding-top: 0;
+}
