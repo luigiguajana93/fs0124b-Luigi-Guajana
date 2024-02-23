@@ -1,0 +1,295 @@
+body{
+    color: #191919;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+a{
+    color:#191919;
+}
+
+.header{
+    
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 100px;
+    background-color: #ffc017;
+    display: flex;
+    justify-content:space-evenly;
+    border-bottom: 1px solid #191919;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: background-color 0.5s;
+}
+
+.header-white{
+    background-color: white;
+
+}
+
+
+
+.start{
+    background-color: #191919;
+    color: white;
+    border-radius: 25px;
+    transition: background-color 0.5s;
+}
+
+.start-green {
+    background-color: #1a8917;
+    color: white;
+}
+header div a {
+text-decoration: none;
+padding: 10px;
+margin: 5px;
+font-size: 0.8rem;
+}
+
+.container-topper{
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-right: 50px;
+    background-color: #ffc017;
+    display: flex;
+    justify-content:space-evenly;
+    height: 450px;
+}
+.topper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+.topper h1{
+    font-size: 5.5rem;
+    font-family: "Spectral", serif;
+    padding-bottom: 30px;
+}
+
+.topper p{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.topper a{
+    text-decoration: none;
+    background-color: #191919;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+article{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid grey;
+    justify-content: center;
+}
+.trending-title{
+    padding-left: 90px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.trending-title h2{
+    padding-top: 7px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.trending-art{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+
+    
+
+}
+.single-art{
+    width:400px;
+    display: flex;
+    flex-direction: row;
+}
+.single-art h1{
+    font-size: 2rem;
+    color: rgba(126, 122, 122, 0.422);
+    padding: 10px;
+}
+.text{
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.text div:nth-child(1){
+display: flex;
+flex-direction: row;
+padding-bottom: 10px;
+}
+.text h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.text img{
+
+border-radius: 50%;
+width: 25px;
+height: 25px;
+}
+.text span{
+    font-weight: bold;
+    padding-left: 10px;
+
+}
+.subart{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: gray;
+}
+.subart p {
+    padding-right: 10px;
+}
+.subart img {
+    width: 15px;
+    height:15px;
+}
+
+.downpage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.list {
+    width: 600px;
+}
+
+.discover{
+    width: 600px;
+    justify-content: center;
+    position: sticky;
+    top: 100px;
+
+}
+
+
+.downpage-art img {
+    border-radius: 50%;
+    width: 25px;
+    padding-right: 10px;
+}
+
+.downpage-art span{
+    font-weight: bold;
+}
+
+.downpage-art h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.downpage-art p {
+    color:gray;
+    padding-bottom: 10px;
+}
+
+.img-art{
+
+width: 150px;
+height: 100px;
+padding: 50px;
+}
+
+.list-art{
+    display: flex;
+    flex-direction: row;
+}
+
+.sublist-art{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    font-size: 0.8rem;
+    text-align: le;
+}
+.sublist-art p{
+    padding-left: 10px;
+}
+
+.sublist-art a{
+    text-decoration: none;
+    color:gray;
+    background-color: rgb(230, 226, 226);
+    border-radius: 20px;
+    text-align: center;
+    
+}
+
+.sublist-art img{
+    width: 15px;
+    height: 15px;
+}
+
+#bookmark{
+    position: relative;
+    left:100px;
+    
+}
+
+
+.discover h1{
+    font-weight: bold;
+    text-align: center;
+}
+
+.disc-button{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid gray;
+    padding: 20px;
+    gap: 10px;
+}
+
+.disc-button button{
+    background-color: white;
+    border-color: rgb(244, 241, 241);
+    color: rgba(117, 117, 117, 0.8);
+    padding: 10px;
+
+    
+}
+
+.footer-a {
+    padding-top: 30px;
+    text-indent:1.5rem;
+    line-height: 2rem;
+}
+
+.footer-a a{
+text-decoration: none;
+
+padding: 10px;
+margin: 10px;
+font-size: 1.2rem;
+color: gray;
+
+}
+
