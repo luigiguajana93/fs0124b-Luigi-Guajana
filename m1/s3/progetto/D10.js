@@ -525,7 +525,7 @@ Array.from.colore.forEach(function(a){
 */
 const nuovoelemento = function (){
   const nuovo = document.getElementById('myList');
-  const task =document.getElementById('task');
+  const Task =document.getElementById('task');
   for(let i =0; i< nuovo.length;i++)
   {
     const elemento = document.createElement('li')
