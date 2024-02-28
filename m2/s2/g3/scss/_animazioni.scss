@@ -1,0 +1,24 @@
+a:hover{
+    cursor: pointer;
+    background-color:darken($bg_hero,20);
+    transition: 1s;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 1px 3px 1px 1px;
+    transition: 1s;
+}
+
+
+.left{ animation:vanish  4s}
+
+.right{ animation:vanish 2s}
+
+
+@keyframes vanish {
+    from{
+        transform:translateY(-50%)
+    }
+
+}

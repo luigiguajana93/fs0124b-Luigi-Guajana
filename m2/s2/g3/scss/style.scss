@@ -1,0 +1,82 @@
+
+@import 'reset';
+@import 'colori';
+@import 'font';
+@import 'spaziature';
+@import 'bottoni';
+@import 'mixins_generici';
+@import 'animazioni';
+
+/////////////////////////////////////////////
+/// 
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+h3{
+    @include logo;
+}
+
+h1{
+    @include titolo;
+}
+
+header{
+    background-color: $bg_hero;
+    display: flex;
+    justify-content: space-between;
+    padding-inline:4rem;
+    position: sticky;
+    z-index: 1;
+
+}
+
+a{
+    font-size: nth($size,1);
+    color:$testo;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.hero{
+    background-color: $bg_hero;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left{
+    width: 50%;
+    align-self:center;
+    
+}
+.left{ p{color: $testo;
+        padding-bottom: 20px;
+}}
+
+
+
+.right{
+    img{
+        position: relative;
+        top: 50px;
+        right:20px;
+        @include shadow;
+    }
+}
+
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.bottom{
+    img{width: 300px;
+        @include shadow;
+
+    }
+}

@@ -1,0 +1,16 @@
+button{
+    color: $testo;
+    border: none;
+    border-radius: 5px;}
+
+.first {
+    background-color: map-get($bottoni, first );
+}
+
+.second {
+    background-color: map-get($bottoni, second );
+}
+
+.third {
+    background-color: map-get($bottoni, third );
+}

@@ -1,0 +1,11 @@
+abbiamo compilato l'scss usando questo comando :
+
+sass scss/style.scss css/style.css -w 
+
+con -w il terminale resta in attesa fino a quando noi vogliamo 
+compilare modifiche da essere salvate e poi con ctrl + c termina l'autosave.
+
+
+npm init inizio a mettere il package json
+
+npm run compile  avvii la modifica
