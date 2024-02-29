@@ -1,0 +1,42 @@
+$purple : rgba(117,80,254,255);
+$btn-font-size: 0.6rem;
+$btn-color:rgba(26,203,152,255);
+$color_subhero: #ffeeda;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('variables');
+
+.hero{
+    background-color: $purple;
+    padding-inline: 20px;
+h1{
+    color: $white;
+}
+p{
+    color: $gray-500;
+}
+}
+
+.img_subhero{
+    background-color:#ffeeda ;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+
+h6{font-weight: bold;}
+
+.row{p{font-size: 0.8rem;
+    color: $gray-600;
+}}
+
+.btn-success{
+background-color: $btn-color;
+}
+.btn-light{
+    font-weight: bold;
+}
+
+
