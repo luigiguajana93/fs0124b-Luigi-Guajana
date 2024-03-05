@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #save{
+            background-color: aquamarine;
+            border-radius: 10px;
+        }
+        #delete{
+            background-color:rgb(189, 130, 130);
+            border-radius: 10px;
+        }
+        #timer{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="timer"></div>
+    <div id="target"></div>
+<input id="namefield" type="text" placeholder="inserisci nome">
+<button id="save"> Salva </button>
+<button id="delete"> Cancella </button>
+
+    <script>
+let target = document.getElementById('target')
+let namefield =document.getElementById('namefield')
+let save= document.getElementById('save')
+let canc = document.getElementById('delete')
+
+save.addEventListener("click",() => {
+    const inputText =namefield.value;
+    localStorage.setItem("nameSaved",inputText);
+    namefield.value="";
+    target.innerHTML=inputText;
+})
+    
+
+canc.addEventListener("click",() =>{
+    localStorage.removeItem("nameSaved");
+    target.innerHTML="";
+})
+
+let timer= sessionStorage.getItem("time")
+let areatimer = document.getElementById("timer")
+
+let x = setInterval(function (){
+    timer ++; 
+    areatimer.innerHTML = timer ;
+    sessionStorage.setItem("time",timer);
+},1000)
+
+
+
+
+
+    </script>
+</body>
+</html>
