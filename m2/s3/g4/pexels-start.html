@@ -483,7 +483,7 @@ return await fetch(`https://api.pexels.com/v1/search?query=${query}`, {
 
 let btn= document.querySelector('.first');
 btn.addEventListener("click",()=>{
-  call('sad').then((dati) => {
+  call('iphone').then((dati) => {
     console.log(dati);
     let img = document.querySelectorAll(".card-img-top");
     dati.photos.forEach((photo,index)=>{
@@ -492,10 +492,10 @@ btn.addEventListener("click",()=>{
     });
   }); 
 
-  
+
   let btn1= document.querySelector('.second');
 btn1.addEventListener("click",()=>{
-  call('star').then((dati) => {
+  call('burger').then((dati) => {
     console.log(dati);
     let img = document.querySelectorAll(".card-img-top");
     dati.photos.forEach((photo,index)=>{
