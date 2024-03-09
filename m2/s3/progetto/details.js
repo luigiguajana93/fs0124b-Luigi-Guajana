@@ -1,5 +1,5 @@
 const addressBarContent = new URLSearchParams(location.search)
-const productId = addressBarContent.get('productId')
+const productId = addressBarContent.get('id')
 
 const deleteProduct = () => {
   fetch(`https://striveschool-api.herokuapp.com/api/product/${productId}` , {
@@ -38,7 +38,7 @@ const deleteProduct = () => {
 const showDetail = function (details) {
   const rowD = document.getElementById('row-detail')
   rowD.innerHTML = `<div class="card w-75 m-auto">
-    <img src="${details.imageUrl}" class="card-img-top" alt="${details.name}" >
+    <img src="${details.imageUrl}" class="card-img-top " alt="${details.name}" >
     <div class="card-body">
       <h5 class="card-title">Nome prodotto: ${details.name}</h5>
       <p class="card-text">Brand: ${details.brand}</p>

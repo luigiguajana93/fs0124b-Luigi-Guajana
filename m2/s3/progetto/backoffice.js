@@ -1,5 +1,5 @@
-const addressBarContent = new URLSearchParams('location.search')
-const productId = addressBarContent.get('productId')
+const addressBarContent = new URLSearchParams(location.search)
+const productId = addressBarContent.get('id')
 const nameProductInput = document.getElementById('name')
 const descriptionProductInput = document.getElementById('description')
 const brandProductInput = document.getElementById('brand')
@@ -46,8 +46,8 @@ if (productId) {
     })
 }
 
-const formProduct = document.getElementById('formP')
-formProduct.addEventListener('submit', (e) => {
+const formProduct = document.getElementById('salvabtn')
+formProduct.addEventListener("click", (e) => {
   e.preventDefault()
 
 
@@ -76,6 +76,7 @@ formProduct.addEventListener('submit', (e) => {
     .then((res) => {
       if (res.ok) {
         alert('Congratulazioni! Hai salvato il prodotto!')
+        window.location.href='index.html'
       } else {
         console.log(res)
         alert('ATTENZIONE! Errore nel salvataggio!')
@@ -102,7 +103,13 @@ formProduct.addEventListener('submit', (e) => {
 const edit = document.getElementById('editbtn')
 edit.addEventListener("click",()=>{
 
-
+  const newProduct = {
+    name: nameProductInput.value,
+    description: descriptionProductInput.value,
+    brand: brandProductInput.value,
+    imageUrl: imageProductInput.value,
+    price: priceProductInput.value,
+  }
 
 fetch(`https://striveschool-api.herokuapp.com/api/product/${productId}`, {
     method: 'PUT',
@@ -116,6 +123,7 @@ fetch(`https://striveschool-api.herokuapp.com/api/product/${productId}`, {
     .then((res) => {
       if (res.ok) {
         alert('Congratulazioni! Hai modificato il prodotto!')
+        window.location.href='index.html'
       } else {
         alert('ATTENZIONE! Errore nella modifica')
         if (res.status === 400) {
@@ -130,6 +138,7 @@ fetch(`https://striveschool-api.herokuapp.com/api/product/${productId}`, {
           throw new Error('Errore')
         }
       }
+
     })
     .catch((err) => {
       console.log(err)
