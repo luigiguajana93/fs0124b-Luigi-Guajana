@@ -25,7 +25,8 @@ class User implements Smartphone {
             return
         }
         this.credito -= ( minuti * 0.20)
-        this.numeroChiamate += 1
+        
+        this.numeroChiamate += minuti
         
     }
     get numero404(){
@@ -44,9 +45,9 @@ soggetto.ricarica(10)
 soggetto.chiamata(2)
 soggetto.chiamata(5)
 soggetto.chiamata (3)
+soggetto.chiamata(10)
 soggetto.chiamata(15)
-soggetto.chiamata(15)
-soggetto.chiamata(15)
+soggetto.chiamata(16)
 console.log(soggetto.numero404)
 console.log(soggetto.getNumeroChiamate)
 soggetto.azzeraChiamate()
