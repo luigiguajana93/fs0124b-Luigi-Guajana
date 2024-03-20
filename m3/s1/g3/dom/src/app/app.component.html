@@ -1,0 +1,25 @@
+<div class="container ">
+  <app-navbar></app-navbar>
+  <div class="row d-flex justify-content-center mt-5">
+    <h2 class="bg-success text-center"> POST IN EVIDENZA </h2>
+    <div  class="card " style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{postsArr[1].title}}</h5>
+        <p class="card-text">{{postsArr[1].body}}</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-5">
+    <h2 class="bg-success text-center"> POTREBBERO PIACERTI QUESTI POST  </h2>
+    <div *ngFor="let post of randomArray" class="card d-flex justify-content-center" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{post.title}}</h5>
+        <p class="card-text">{{post.body}}</p>
+
+      </div>
+    </div>
+  </div>
+
+</div>
