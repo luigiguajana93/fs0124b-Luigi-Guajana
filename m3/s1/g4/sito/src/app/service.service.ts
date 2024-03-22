@@ -25,6 +25,11 @@ getInactivePost():Promise<iPost[]>{
     .then(res=>res.filter((p:iPost)=>!p.active))
 }
 
+getPostbyId(id:string):Promise< iPost | undefined >{
+  return this.getAllPost()
+    .then(res=>res.find(p=>p.id == id))
+
+}
 
 
 

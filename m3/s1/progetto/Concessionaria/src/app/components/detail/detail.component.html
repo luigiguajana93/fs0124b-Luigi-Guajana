@@ -1,0 +1,27 @@
+<div class="d-flex ">
+<img [src]="risultato?.modelImage"
+            [ngStyle]="{'height': '300px','width': '50%'}"
+                class="card-img-top pb-3"
+                alt="{{risultato?.brand}} {{risultato?.model}}">
+<div class="card-body"
+[ngStyle]="{'width': '50%'}"
+>
+  <h5 class="card-title h1 text-danger text-center bg-warning mx-2 mb-3 ">{{risultato?.brand}} {{risultato?.model}}
+  </h5>
+  <div class="card-text h4 d-flex flex-column ">
+    <p
+          class="badge bg-warning me-1 mx-2 mb-5 text-danger">Marchio:
+          {{risultato?.brand}}</p>
+      <p
+          class="badge bg-warning me-1 mx-2 mb-5 text-danger">Anno:
+          {{risultato?.year}}</p>
+      <p
+          class="badge bg-warning me-1 mx-2 mb-5 text-danger">Prezzo:€
+          {{risultato?.price}}</p>
+
+  </div>
+  <button class="btn btn-success text-white"
+          [routerLink]="['/']"
+          >Torna in Home</button>
+</div>
+</div>

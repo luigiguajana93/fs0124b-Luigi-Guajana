@@ -1,0 +1,54 @@
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-6">
+          <img src="{{marchioLogo}}"
+          [ngStyle]="{'width': '50%', 'border-radius': '20%'}"
+          >
+      </div>
+      <div class="col-6 p-5 bg-secondary text-white rounded">
+          <h1 class="fs-1 text-uppercase ">La nostra vasta gamma di {{marchio}}</h1>
+      </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-6 d-flex justify-content-center  mb-3" *ngFor="let car of cars">
+        <div class="card" [ngStyle]="{'width': '70%'}" [ngClass]="{
+            'bg-success': car.available,
+            'bg-danger': !car.available
+        }">
+            <img [src]="car.modelImage"
+            [ngStyle]="{'height': '70%','width': '100%'}"
+                class="card-img-top"
+                alt="{{car.brand}} {{car.model}}">
+            <div class="card-body">
+                <h5 class="card-title h1 text-white ">{{car.brand}} {{car.model}}
+                </h5>
+                <p class="card-text h4">
+                    <span
+                        class="badge bg-warning me-1 mb-2 text-dark">Anno:
+                        {{car.year}}</span>
+                    <span
+                        class="badge bg-warning me-1 mb-2 text-dark">Prezzo:€
+                        {{car.price}}</span>
+                    <span *ngIf="car.available; else elseSpan"
+                        class="badge bg-warning me-1 mb-2 text-dark">Pronta
+                        consegna: sì</span>
+                        <ng-template #elseSpan>
+                            <span
+                        class="badge bg-warning me-1 text-dark">Pronta
+                        consegna: no</span>
+                        </ng-template>
+                </p>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-primary"
+                  [routerLink]="['/detail',car.id]"
+                  >Mostra Dettagli</button>
+
+                  <button class="btn btn-warning"
+                  [routerLink]="['/']"
+                  >Torna in Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
