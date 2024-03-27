@@ -1,0 +1,31 @@
+<h1 class="bg-success">Lista di tutti gli articoli del Negozio</h1>
+<div class="row d-flex  ">
+<div *ngFor=" let phone of phones" class="col-4 ">
+<div  class="card" style="width: 18rem;">
+  <img [src]="phone.thumbnail" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{phone.title}}</h5>
+    <p class="card-text">{{phone.description}}</p>
+    <a href="#" class="btn btn-info">{{phone.price}}€</a>
+    <a href="#" class="btn btn-success">{{phone.brand}}</a>
+    <button class="btn bg-warning" (click)="send(phone)">Aggiungi a Preferiti</button>
+  </div>
+</div>
+</div>
+
+<h1>PREFERITI </h1>
+<div *ngFor=" let phone of prefer" class="col-4 ">
+  <div  class="card" style="width: 18rem;">
+    <img [src]="phone.thumbnail" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{phone.title}}</h5>
+      <p class="card-text">{{phone.description}}</p>
+      <a href="#" class="btn btn-info">{{phone.price}}€</a>
+      <a href="#" class="btn btn-success">{{phone.brand}}</a>
+      <button class="btn bg-warning" (click)="send(phone)">Aggiungi a Preferiti</button>
+    </div>
+  </div>
+  </div>
+</div>
+
+
