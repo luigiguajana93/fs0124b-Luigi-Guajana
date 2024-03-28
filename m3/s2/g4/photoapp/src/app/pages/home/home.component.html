@@ -1,0 +1,14 @@
+<h1>Tutte le nostre Foto</h1>
+
+<h3 class="bg-info">Totale Foto Favorite = {{arrLike.length}} </h3>
+<div class="row d-flex  ">
+  <div *ngFor=" let p of photo" class="col-4 ">
+  <div  class="card" style="width: 18rem;">
+    <img [src]="p.thumbnailUrl" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{p.title}}</h5>
+      <button class="btn bg-danger" (click)="canc(p.id)">Elimina</button>
+      <button class="btn bg-success" (click)="like(p.id)">Mi Piace</button>
+    </div>
+  </div>
+  </div>

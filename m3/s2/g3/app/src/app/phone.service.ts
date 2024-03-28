@@ -10,12 +10,19 @@ export class PhoneService {
 
   apiUrl:string = 'https://dummyjson.com/products';
 
-  subject= new Subject<iPhone[]>();
+  favSubject= new Subject<iPhone[]>();
+  cartSubject= new Subject<iPhone[]>();
 
-  $prefer =  this.subject.asObservable()
+  $prefer = this.favSubject.asObservable()
+  $cart= this.cartSubject.asObservable()
 
-  add(prefer:iPhone[]){
-    this.subject.next(prefer)
+
+  addFav(prefer:iPhone[]){
+    this.favSubject.next(prefer)
+  }
+
+  addCart(prefer:iPhone[]){
+    this.cartSubject.next(prefer)
   }
 
 
