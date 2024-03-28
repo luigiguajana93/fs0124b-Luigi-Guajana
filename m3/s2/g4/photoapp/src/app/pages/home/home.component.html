@@ -7,8 +7,10 @@
     <img [src]="p.thumbnailUrl" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">{{p.title}}</h5>
+      <div class="d-flex justify-content-between">
       <button class="btn bg-danger" (click)="canc(p.id)">Elimina</button>
       <button class="btn bg-success" (click)="like(p.id)">Mi Piace</button>
+    </div>
     </div>
   </div>
   </div>
