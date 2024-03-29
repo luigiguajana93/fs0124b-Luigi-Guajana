@@ -1,0 +1,10 @@
+<h1>TUTTI I TASK NON COMPLETATI </h1>
+
+<div class="row justify-content-center mt-5">
+
+
+<div *ngFor="let task of taskArr" class="card d-flex justify-content-center bg-danger-subtle m-2" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Task di {{getUserById(task.userId)?.firstName}} {{getUserById(task.userId)?.lastName}}</h5>
+    <p class="card-text">{{task.todo}}</p>
+</div>

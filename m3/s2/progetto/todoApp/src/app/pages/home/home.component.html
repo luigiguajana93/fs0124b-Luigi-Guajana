@@ -1,0 +1,11 @@
+<h1> TUTTE LE COSE DA FARE </h1>
+<div class="row justify-content-center mt-5">
+
+<div *ngFor="let task of taskArr">
+  <div class="task-badge p-2 my-2 d-flex align-items-start gap-1 shadow-sm rounded-1" (click)="changeStatus(task.id)" [ngClass]="{'bg-success-subtle':task.completed,'bg-danger-subtle':!task.completed}">
+    <input class="mt-2" type="checkbox" [(ngModel)]="task.completed" >
+    <div>
+    <h5 class="fw-bold my-1">{{task.todo}}</h5>
+    <small class="m-0">Task assegnato a : {{getUserById(task.userId)?.firstName}} {{getUserById(task.userId)?.lastName}}</small>
+  </div>
+</div>

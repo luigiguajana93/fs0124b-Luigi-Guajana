@@ -1,0 +1,32 @@
+<div *ngFor="let user of userArr">
+
+  <div class="row d-flex justify-content-between bg-info-subtle shadow-sm rounded-4 mb-3 gap-5">
+    <div class="col-12 col-lg-5 d-flex align-items-center gap-4">
+      <div class="d-flex">
+        <div>
+          <img [src]="user.image" >
+          <h2>{{user.firstName}} {{user.lastName}}</h2>
+          <p>{{user.title}}</p>
+        </div>
+
+      <div class=" m-3">
+        <h3>Ha da fare: </h3>
+        <ng-container *ngIf="getTasksOfUser(user.id).length > 0; else nullTodo" >
+          <div *ngFor="let t of getTasksOfUser(user.id)"
+          class=" dim p-2 my-3 d-flex align-items-center gap-1  rounded-4" [ngClass]="{ 'bg-success-subtle':t.completed, 'bg-danger-subtle':!t.completed}">
+          <input class="mt-2" type="checkbox" [(ngModel)]="t.completed" >
+          <div>
+            <h5 class="fw-bold my-1">{{t.todo}}</h5>
+          </div>
+          </div>
+        </ng-container>
+<ng-template #nullTodo>
+  <h5 class="text-success"> Tutto Fatto</h5>
+</ng-template>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
