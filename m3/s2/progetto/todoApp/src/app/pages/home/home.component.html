@@ -3,7 +3,8 @@
 
 <div *ngFor="let task of taskArr">
   <!--oltre al click nella checkbox , è possibile cliccare in tutta la task perchè checkarla e decheckarla -->
-  <div class="task-badge p-2 my-2 d-flex align-items-start gap-1 shadow-sm rounded-1" (click)="changeStatus(task.id)" [ngClass]="{'bg-success-subtle':task.completed,'bg-danger-subtle':!task.completed}">
+  <div class="task-badge p-2 my-2 d-flex align-items-start gap-1 shadow-sm rounded-1" (click)="changeStatus(task.id)" [ngClass]="{'bg-success-subtle':task.completed,
+  'bg-danger-subtle':!task.completed}">
     <input class="mt-2" type="checkbox" [(ngModel)]="task.completed" >
     <div>
     <h5 class="fw-bold my-1">{{task.todo}}</h5>
