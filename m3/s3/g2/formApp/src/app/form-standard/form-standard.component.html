@@ -1,0 +1,27 @@
+<!--LATO LOGIN-->
+
+<h1>AREA LOGIN</h1>
+
+<form (ngSubmit)="submit(f)" #f="ngForm">
+
+
+<div ngModelGroup="authData" class="form-row row my-5">
+
+  <input type="email" required name="email" ngModel class="form-control" #email="ngModel" placeholder="Inserisci email">
+  <div *ngIf="email.invalid && email.dirty" class="alert alert-danger">
+    Inserisci la tua Email per accedere
+  </div>
+
+  <input type="password" required name="password" ngModel class="form-control" #password="ngModel" placeholder="Inserisci la tua password">
+  <div *ngIf="password.invalid && password.dirty" class="alert alert-danger">
+    Inserisci la tua password per accedere
+  </div>
+
+</div>
+
+
+
+<button [disabled]="f.invalid" class="btn btn-success"> Invia </button>
+
+</form>
+
