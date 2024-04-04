@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "email": "antonio@schipani.it",
+      "password": "$2a$10$rPxP063W.qcmaPICBOEYeOfCYt5oYf.6Agg8b6b6KjbI9H3KLWNJW",
+      "name": "antonio",
+      "id": 1
+    },
+    {
+      "email": "cristiano@turri.it",
+      "password": "$2a$10$DTiCzxUO9f1R/Zbk79rmeuOs34nkj8iwIhde511QoK9Hb4aXk1yWO",
+      "name": "cristiano",
+      "id": 2
+    },
+    {
+      "email": "luigi.guajana@gmail.com",
+      "password": "$2a$10$fiNycUtbWftbM5Xg./akGunUZPKb6ejMch.mWZ5RMlMeuPjZYLV1W",
+      "name": "luigi",
+      "id": 3
+    }
+  ]
+}
