@@ -1,0 +1,21 @@
+<div class="container">
+<h1 class="text-center text-white">Utenti Registrati alla nostra piattaforma:</h1>
+
+<div class="row row-cols-5 gy-5 mt-5">
+  <div *ngFor="let u of user" class="col ">
+    <div class="card">
+      <div class="first-content text-white">
+        <span>{{u.firstName}} {{u.lastName}}</span>
+      </div>
+      <div class="second-content text-white">
+    <span>Indirizzo Email  {{u.email}}</span>
+      </div>
+
+
+    </div>
+
+
+  </div>
+</div>
+
+</div>

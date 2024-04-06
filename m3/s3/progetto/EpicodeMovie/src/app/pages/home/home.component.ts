@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { UsersService } from '../../users.service';
 
 @Component({
   selector: 'app-home',
@@ -7,13 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-
-  constructor(private http:HttpClient){}
+  constructor(private http:HttpClient,private UsersSvc:UsersService){}
 
   ngOnInit(){
 
     this.http.get('http://localhost:3000/users').subscribe()
 
   }
-
 }

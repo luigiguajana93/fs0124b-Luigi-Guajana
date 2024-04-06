@@ -1,0 +1,18 @@
+
+<div class="badge-log d-flex justify-content-center align-items-center">
+  <div class="container">
+    <div class="heading">Registrati al Fantastico mondo di EpicodeMovie </div>
+    <form action="" class="form">
+      <input  class="input" type="text" name="nome" [(ngModel)]="registerData.firstName" placeholder="Inserisci il tuo nome ">
+
+      <input  class="input" type="text" name="cognome" [(ngModel)]="registerData.lastName" placeholder="Inserisci il tuo cognome ">
+
+      <input  class="input" type="email" name="email" [(ngModel)]="registerData.email"  placeholder="Inserisci la tua email">
+
+      <input  class="input" type="password" name="password" [(ngModel)]="registerData.password" id="password" placeholder="Password">
+
+  
+      <button (click)="signUp()" class="login-button">Registrati</button>
+    </form>
+  </div>
+  </div>

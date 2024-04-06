@@ -5,7 +5,8 @@ import { AuthService } from './auth.service';
 @Injectable({
   providedIn: 'root'
 })
-export class GuestGuard  {
+export class AuthGuard  {
+
   constructor(
     private authSvc:AuthService,
     private router:Router
@@ -14,16 +15,15 @@ export class GuestGuard  {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): MaybeAsync<GuardResult> {
-
-      if(this.authSvc.syncIsLoggedIn){
-        this.router.navigate(['/dashboard'])
+      if(!this.authSvc.syncIsLoggedIn){
+        this.router.navigate(['/auth/login'])
       }
-    return !this.authSvc.syncIsLoggedIn
+    return this.authSvc.syncIsLoggedIn
   }
-
   canActivateChild(
     childRoute: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): MaybeAsync<GuardResult> {
     return this.canActivate(childRoute,state);
   }
+
 }

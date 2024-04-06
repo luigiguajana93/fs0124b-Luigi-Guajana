@@ -1,0 +1,198 @@
+{
+  "users": [
+    {
+      "email": "luigi.guajana@gmail.com",
+      "password": "$2a$10$GcI1G.i4mFITlNZf1Mj5SOWvy7wAXmRoxuuRcMm6V9S8i.MNRHM5.",
+      "firstName": "Luigi",
+      "lastName": "Guajana",
+      "id": 11,
+      "favorite": []
+    },
+    {
+      "email": "pippo@baudo",
+      "password": "$2a$10$VvW0ynOSlqSdTiQPIZJ74eXZ/FE/9eK3l0y3WCffTa0SqaBZnfeJm",
+      "firstName": "pippo",
+      "lastName": "baudo",
+      "id": 12,
+      "favorite": []
+    },
+    {
+      "email": "angelo@duro.it",
+      "password": "$2a$10$afKw8H.3iHQ1Dc0FV72vt.M.DJfrvT0lt22MlQhpUP99o58ZIYqZS",
+      "firstName": "angelo",
+      "lastName": "duro",
+      "id": 13,
+      "favorite": []
+    },
+    {
+      "email": "mavogobi@mailinator.com",
+      "password": "$2a$10$vOSj097LWEpYj8WPE6151.0mQHr9TtDadCaKlzDyeV01CCjLl1Lvi",
+      "firstName": "Laboriosam reprehen",
+      "lastName": "Aut ut numquam eu te",
+      "id": 14,
+      "favorite": []
+    },
+    {
+      "email": "pan@gocciola.org",
+      "password": "$2a$10$gvhfCaSum5XTcWr.8lmYgeC0BxUZAt7EFBbI6OxKLVccjdYdip3.u",
+      "firstName": "Pan",
+      "lastName": "Gocciola",
+      "id": 15,
+      "favorite": []
+    },
+    {
+      "email": "maria@panna.it",
+      "password": "$2a$10$VCCPTp9e9Cc8OZ9Q5WaTBeM6uo0rRtKlHCuGpAtg8VpkJL4LS58Gi",
+      "firstName": "maria",
+      "lastName": "panna",
+      "id": 16
+    },
+    {
+      "email": "pippo@franco.it",
+      "password": "$2a$10$KEHcV3GOC8C80ynekLDQG.DbAAWn5.jCe/dtjwqo1cv5M8MRQiOFq",
+      "firstName": "pippo",
+      "lastName": "franco",
+      "id": 17
+    }
+  ],
+  "popular": [
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "year": 1972,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "image": "https://picsum.photos/200/300/?random"
+    },
+    {
+      "id": 4,
+      "title": "Pulp Fiction",
+      "year": 1994,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "image": "https://picsum.photos/200/300/?random"
+    },
+    {
+      "id": 5,
+      "title": "Schindler's List",
+      "year": 1993,
+      "genre": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
+      "description": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+      "image": "https://picsum.photos/200/300/?random"
+    },
+    {
+      "id": 6,
+      "title": "The Lord of the Rings: The Return of the King",
+      "year": 2003,
+      "genre": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "description": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      "image": "https://picsum.photos/200/300/?random"
+    },
+    {
+      "id": 7,
+      "title": "Fight Club",
+      "year": 1999,
+      "genre": [
+        "Drama"
+      ],
+      "description": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+      "image": "https://picsum.photos/200/300/?random"
+    },
+    {
+      "id": 8,
+      "title": "Forrest Gump",
+      "year": 1994,
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "description": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+      "image": "https://picsum.photos/200/300/?random"
+    },
+    {
+      "id": 9,
+      "title": "Inception",
+      "year": 2010,
+      "genre": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+      "image": "https://picsum.photos/200/300/?random"
+    },
+    {
+      "id": 10,
+      "title": "The Matrix",
+      "year": 1999,
+      "genre": [
+        "Action",
+        "Sci-Fi"
+      ],
+      "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+      "image": "https://picsum.photos/200/300/?random"
+    },
+    {
+      "id": 11,
+      "title": "Goodfellas",
+      "year": 1990,
+      "genre": [
+        "Biography",
+        "Crime",
+        "Drama"
+      ],
+      "description": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
+      "image": "https://picsum.photos/200/300/?random"
+    },
+    {
+      "id": 12,
+      "title": "Star Wars: Episode V - The Empire Strikes Back",
+      "year": 1980,
+      "genre": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "description": "After the rebels have been brutally overpowered by the Empire on their newly established base, Luke Skywalker takes advanced Jedi training with Master Yoda, while his friends are pursued by Darth Vader as part of his plan to capture Luke.",
+      "image": "https://picsum.photos/200/300/?random"
+    },
+    {
+      "id": 13,
+      "title": "The Silence of the Lambs",
+      "year": 1991,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "description": "A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+      "image": "https://picsum.photos/200/300/?random"
+    },
+    {
+      "id": 14,
+      "title": "The Green Mile",
+      "year": 1999,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Fantasy"
+      ],
+      "description": "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
+      "image": "https://picsum.photos/200/300/?random"
+    }
+  ]
+}

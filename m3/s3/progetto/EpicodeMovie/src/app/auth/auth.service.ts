@@ -4,14 +4,13 @@ import { JwtHelperService } from '@auth0/angular-jwt';
 import { BehaviorSubject, Observable, map, tap } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { environment } from '../../environments/environment';
-import { ILoginData } from '../Models/i-login-data';
+import { environment } from '../../environments/environment.development';
+import { ILoginData } from '../Models/ilogin-data';
 
 type AccessData = {
   accessToken:string,
   user:IUser
 }
-
 
 @Injectable({
   providedIn: 'root'
@@ -31,20 +30,17 @@ export class AuthService {
 
   syncIsLoggedIn:boolean = false;
 
+
   constructor(
     private http:HttpClient,
     private router:Router
   ) {
-
       this.restoreUser()
 
   }
 
   registerUrl:string = environment.registerUrl
   loginUrl:string = environment.loginUrl
-
-
-
 
   register(newUser:Partial<IUser>):Observable<AccessData>{
     return this.http.post<AccessData>(this.registerUrl,newUser)
@@ -119,7 +115,6 @@ export class AuthService {
             break;
     }
   }
-
 
 
 

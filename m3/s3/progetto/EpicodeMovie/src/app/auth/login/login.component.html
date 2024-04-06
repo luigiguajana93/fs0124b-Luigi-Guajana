@@ -1,0 +1,21 @@
+
+
+<div class="badge-log d-flex justify-content-center align-items-center">
+<div class="container">
+  <div class="heading">Accedi alla piattaforma</div>
+  <form  class="form">
+    <input  class="input" required type="email" name="email" [(ngModel)]="loginData.email" #email="ngModel" id="email" placeholder="E-mail">
+    <div *ngIf="email.invalid && email.dirty" class="alert alert-danger mt-2">
+      Inserisci la tua Email per accedere
+    </div>
+    <input  class="input" required type="password" name="password" [(ngModel)]="loginData.password" id="password" #password="ngModel" placeholder="Password">
+    <div *ngIf="password.invalid && password.dirty" class="alert alert-danger mt-2">
+      Inserisci la tua password per accedere
+    </div>
+
+    <button (click)="signIn()" class="login-button">Accedi</button>
+   <p class="text-center"> o </p>
+    <button routerLink="../register" class="login-button">Registrati</button>
+  </form>
+</div>
+</div>
