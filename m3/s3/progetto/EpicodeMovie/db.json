@@ -91,28 +91,6 @@
       "image": "https://picsum.photos/200/300/?random"
     },
     {
-      "id": 6,
-      "title": "The Lord of the Rings: The Return of the King",
-      "year": 2003,
-      "genre": [
-        "Adventure",
-        "Drama",
-        "Fantasy"
-      ],
-      "description": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
-      "image": "https://picsum.photos/200/300/?random"
-    },
-    {
-      "id": 7,
-      "title": "Fight Club",
-      "year": 1999,
-      "genre": [
-        "Drama"
-      ],
-      "description": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
-      "image": "https://picsum.photos/200/300/?random"
-    },
-    {
       "id": 8,
       "title": "Forrest Gump",
       "year": 1994,
