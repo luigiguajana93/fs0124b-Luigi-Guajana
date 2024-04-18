@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b8722663-0d97-4918-b06f-2b1b6e87d0d3" name="Changes" comment="consegna finalaaaa" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2fBLBLfZRZMRIxlbNCrPg2r20dB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/luigi/OneDrive/Desktop/Epicode/lavori corso/backend/m1/s1/g2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="corso.java2.main" />
+      <module name="esercizio martedi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="corso.java2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8722663-0d97-4918-b06f-2b1b6e87d0d3" name="Changes" comment="" />
+      <created>1713269388778</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713269388778</updated>
+    </task>
+    <task id="LOCAL-00001" summary="consegna esercizio martedi">
+      <option name="closed" value="true" />
+      <created>1713276584040</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713276584040</updated>
+    </task>
+    <task id="LOCAL-00002" summary="consegna fatta">
+      <option name="closed" value="true" />
+      <created>1713276693100</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713276693100</updated>
+    </task>
+    <task id="LOCAL-00003" summary="consegna fatta">
+      <option name="closed" value="true" />
+      <created>1713276819650</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713276819650</updated>
+    </task>
+    <task id="LOCAL-00004" summary="consegna ultima">
+      <option name="closed" value="true" />
+      <created>1713277088062</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713277088062</updated>
+    </task>
+    <task id="LOCAL-00005" summary="consegna finale">
+      <option name="closed" value="true" />
+      <created>1713277319472</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713277319472</updated>
+    </task>
+    <task id="LOCAL-00006" summary="consegna finalissima">
+      <option name="closed" value="true" />
+      <created>1713277366901</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713277366901</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="consegna esercizio martedi" />
+    <MESSAGE value="consegna fatta" />
+    <MESSAGE value="consegna ultima" />
+    <MESSAGE value="consegna finale" />
+    <MESSAGE value="consegna finalissima" />
+    <option name="LAST_COMMIT_MESSAGE" value="consegna finalissima" />
+  </component>
+</project>
