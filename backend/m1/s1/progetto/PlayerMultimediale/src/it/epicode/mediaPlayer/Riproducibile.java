@@ -39,9 +39,6 @@ public abstract class Riproducibile extends ElementoMultimediale implements Elem
 
     }
 
-    @Override
-    public void play() {
 
-    }
 }
 
