@@ -1,7 +1,6 @@
 package main.java.it.epicode.library.entities;
 import jakarta.persistence.Entity;
 
-import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;

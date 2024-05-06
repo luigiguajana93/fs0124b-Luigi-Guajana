@@ -5,24 +5,23 @@ import jakarta.persistence.*;
 import main.java.it.epicode.library.entities.constants.Tables;
 
 @Entity
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+@Table(name = Tables.Names.LIBRARY_BASE)
+@Inheritance(strategy = InheritanceType.JOINED)
 
-@DiscriminatorColumn(name = "elementi_catalogo")
-@NamedQuery(name = "GET_BY_ISBN", query = "SELECT r FROM Prodotti r WHERE isbn = :ISBN")
-@NamedQuery(name = "GET_BY_AUTORE",query = "SELECT r FROM Prodotti r WHERE autore = :AUTORE")
-@NamedQuery(name = "GET_BY_ANNO",query = "SELECT r FROM Prodotti r WHERE annopubblicazione = :ANNOPUBBLICAZIONE")
+@DiscriminatorColumn(name = "item_type", discriminatorType = DiscriminatorType.STRING)
+
 public abstract class LibraryItem extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-
-    private Integer isbn;
-
+    @Column(length = 13, nullable = false)
+    private String isbn;
+    @Column(length = 125, nullable = false)
     private String title;
     private int publicationYear;
     private int pages;
 
-    public LibraryItem( String title, int publicationYear, int pages) {
-
+    public LibraryItem(String isbn, String title, int publicationYear, int pages) {
+        this.isbn = isbn;
         this.title = title;
         this.publicationYear = publicationYear;
         this.pages = pages;
@@ -31,7 +30,7 @@ public abstract class LibraryItem extends BaseEntity{
     public LibraryItem() {
     }
 
-    public Integer getIsbn() {
+    public String getIsbn() {
         return isbn;
     }
 
@@ -47,7 +46,7 @@ public abstract class LibraryItem extends BaseEntity{
         return pages;
     }
 
-    public void setIsbn(Integer isbn) {
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
 

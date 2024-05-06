@@ -3,7 +3,7 @@ package main.java.it.epicode.library.entities;
 import jakarta.persistence.*;
 
 import java.util.Date;
-import jakarta.persistence.Entity;
+
 
 @Entity
 public class User extends BaseEntity{
