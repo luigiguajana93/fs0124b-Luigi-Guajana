@@ -1,4 +1,4 @@
-package it.epicode.demo;
+package it.epicode.demo.entities;
 
 public class Topping extends MenuItem {
     public Topping(String name, double price, int calories) {

@@ -1,5 +1,9 @@
 package it.epicode.demo;
 
+import it.epicode.demo.entities.Drink;
+import it.epicode.demo.entities.Menu;
+import it.epicode.demo.entities.Pizza;
+import it.epicode.demo.entities.Topping;
 import org.springframework.context.annotation.Bean;
 
 

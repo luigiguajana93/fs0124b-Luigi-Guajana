@@ -1,5 +1,6 @@
 package it.epicode.demo;
 
+import it.epicode.demo.entities.Menu;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

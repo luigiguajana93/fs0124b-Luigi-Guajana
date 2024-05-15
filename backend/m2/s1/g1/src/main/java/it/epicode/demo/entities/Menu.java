@@ -1,4 +1,4 @@
-package it.epicode.demo;
+package it.epicode.demo.entities;
 
 
 import java.util.List;
