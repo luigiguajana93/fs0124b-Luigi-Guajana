@@ -4,10 +4,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.*;
 
-@EqualsAndHashCode(callSuper = true)
 @Entity
-@Builder(setterPrefix = "with")
 @Table(name = "utenti")
+@Builder(setterPrefix = "with")
+@EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

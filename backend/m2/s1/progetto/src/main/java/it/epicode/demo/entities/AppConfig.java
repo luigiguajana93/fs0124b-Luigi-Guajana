@@ -4,7 +4,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-
 public class AppConfig {
 
     @Bean(name = " Luigi")
@@ -69,7 +68,7 @@ public class AppConfig {
             return Postazioni.builder()
                     .withDescrizione("prima postazione")
                     .withTipo(TipoPostazione.PRIVATO)
-                    .withOccupantiMax(10)
+                    .withOccupantiMax(1)
                     .withEdificio(secondoEdificio())
                     .build();
         }
@@ -79,7 +78,7 @@ public class AppConfig {
         return Postazioni.builder()
                 .withDescrizione("bellissima")
                 .withTipo(TipoPostazione.OPENSPACE)
-                .withOccupantiMax(1)
+                .withOccupantiMax(2)
                 .withEdificio(primoEdificio())
                 .build();
     }
@@ -88,8 +87,8 @@ public class AppConfig {
     public Postazioni posto03(){
         return Postazioni.builder()
                 .withDescrizione("terzo postazione")
-                .withTipo(TipoPostazione.SALA_RIUNIONI)
-                .withOccupantiMax(60)
+                .withTipo(TipoPostazione.RIUNIONE)
+                .withOccupantiMax(3)
                 .withEdificio(terzoEdificio())
                 .build();
     }

@@ -18,6 +18,4 @@ public class Edificio extends Base{
     private String name;
     private String indirizzo;
     private String citta;
-
-
 }

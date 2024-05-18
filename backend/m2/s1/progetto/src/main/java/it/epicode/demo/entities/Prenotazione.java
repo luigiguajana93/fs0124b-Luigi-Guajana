@@ -1,7 +1,9 @@
 package it.epicode.demo.entities;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
@@ -10,8 +12,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @Data
-
-public class Prenotazioni extends Base {
+public class Prenotazione extends Base {
     @ManyToOne
     @JoinColumn(name = "postazione_id")
     private Postazioni postazioni;
@@ -21,9 +22,8 @@ public class Prenotazioni extends Base {
     private LocalDate dataPrenotazione;
     private LocalDate dataScadenza;
 
-    @Builder(setterPrefix = "with")
-    public Prenotazioni(Postazioni postazioni, Utente utenti, LocalDate dataPrenotazione) {
 
+    public Prenotazione(Postazioni postazioni, Utente utenti, LocalDate dataPrenotazione) {
         this.postazioni = postazioni;
         this.utenti = utenti;
         this.dataPrenotazione = dataPrenotazione;
