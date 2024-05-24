@@ -40,7 +40,7 @@ public class DispositiviController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Dispositivi> getDispositiviBiId(@PathVariable Long id){
+    public ResponseEntity<Dispositivi> getDispositiviById(@PathVariable Long id){
         Dispositivi dispositivi1 = dispositivi.findById(id);
         if(dispositivi1 != null){
             return ResponseEntity.ok(dispositivi1);
@@ -63,6 +63,14 @@ public class DispositiviController {
         return ResponseEntity.noContent().build();
     }
 
-
+    @PutMapping("/{idDipendente}/{idDispositivo}")
+    public ResponseEntity<Dispositivi>aggiungiDipendente(@PathVariable Long idDipendente, @PathVariable Long idDispositivo){
+        try {
+            Dispositivi dispositivo = dispositivi.assegnaDispositivo(idDipendente, idDispositivo);
+            return ResponseEntity.ok(dispositivo);
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(null);
+        }
+    }
 
 }

@@ -2,6 +2,7 @@ package it.epicode.verificaSpring.services;
 import it.epicode.verificaSpring.controllers.records.DispositiviRequest;
 import it.epicode.verificaSpring.entities.Dipendenti;
 import it.epicode.verificaSpring.entities.Dispositivi;
+import it.epicode.verificaSpring.enums.StatoDispositivo;
 import it.epicode.verificaSpring.repository.DipendentiRepository;
 import it.epicode.verificaSpring.repository.DispositiviRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +19,7 @@ public class DispositiviService {
     @Autowired
     DispositiviRepository dispositivi;
     @Autowired
-    DipendentiRepository dipendente;
+    DipendentiService dipendente;
 
 
     public Dispositivi save(DispositiviRequest d){
@@ -48,16 +49,27 @@ public class DispositiviService {
 
 
     public Dispositivi update(Long id, DispositiviRequest dispositivo){
-        Dispositivi disp = dispositivi.findById(id).orElseThrow(() -> new RuntimeException("Dispositivo non trovato"));
-        disp.setTipo(dispositivo.tipo());
-        disp.setStato(dispositivo.stato());
+        Dispositivi dipes = dispositivi.findById(id).orElseThrow(() -> new RuntimeException("Dispositivo non c'è"));
+        dipes.setTipo(dispositivo.tipo());
+        dipes.setStato(dispositivo.stato());
 
-        return dispositivi.save(disp);
+        return dispositivi.save(dipes);
     }
 
-    public Dispositivi assegnaDispositivo(Long idDipendente, Long idDispositivo){
-        Dipendenti dipendenti = dipendente.findById(idDipendente).orElseThrow();
-        Dispositivi dispositivo = dispositivi.findById(idDispositivo).orElseThrow();
-        if(dipendenti )
+
+    public Dispositivi assegnaDispositivo(Long dipendenteId, Long dispositivoId) {
+        Dipendenti dipendenti = dipendente.findById(dipendenteId);
+        Dispositivi dispositivo = dispositivi.findById(dispositivoId).orElseThrow();
+        if(dispositivo.getStato().equals(StatoDispositivo.DISPONIBILE)){
+            dispositivo.setDipendenti(dipendenti);
+            dispositivi.save(dispositivo);
+        }else{
+            throw new RuntimeException("Non si può assegnare perchè " + dispositivo.getStato());
+        }
+        return dispositivo;
+
+
     }
+
+
 }
