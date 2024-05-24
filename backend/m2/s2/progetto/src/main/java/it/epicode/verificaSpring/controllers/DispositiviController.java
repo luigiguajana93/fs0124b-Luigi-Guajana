@@ -1,7 +1,5 @@
 package it.epicode.verificaSpring.controllers;
-import it.epicode.verificaSpring.controllers.records.DipendentiRequest;
 import it.epicode.verificaSpring.controllers.records.DispositiviRequest;
-import it.epicode.verificaSpring.entities.Dipendenti;
 import it.epicode.verificaSpring.entities.Dispositivi;
 import it.epicode.verificaSpring.services.DispositiviService;
 import it.epicode.verificaSpring.services.exceptions.BadRequestException;
