@@ -13,18 +13,22 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder(setterPrefix = "with")
+
 public class Utente extends Base{
     private String nome;
-    @OneToOne(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     @JoinColumn(name = "ruolo_id")
     private Ruoli ruolo;
     @OneToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     @JoinColumn(name = "utente_id")
-    private List<Evento> evento = new ArrayList<>();
+    private List<Evento> evento;
 
+    @Builder(setterPrefix = "with")
     public Utente(Ruoli ruolo, String nome) {
         this.ruolo = ruolo;
         this.nome = nome;
+    }
+    public void addEvento(Evento e) {
+        this.evento.add(e);
     }
 }

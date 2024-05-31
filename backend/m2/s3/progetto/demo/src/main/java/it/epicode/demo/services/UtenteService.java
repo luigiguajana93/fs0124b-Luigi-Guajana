@@ -23,11 +23,9 @@ public class UtenteService {
     RuoliRepository ruoli;
 
     public Utente save(UtenteRequest u){
-        Ruoli r = ruoli.findById(u.ruoloId()).orElseThrow();
-        Utente utente = new Utente(
-                u.nome(),
-                u.ruolo()
-        );
+        Ruoli r = ruoli.findById(u.ruoloId()).orElseThrow(() -> new RuntimeException("ruolo non c'è"));
+        var ut = Utente.builder().withNome(u.nome()).withRuolo(r).build();
+        return utente.save(ut);
     }
 
 

@@ -3,13 +3,11 @@ package it.epicode.demo.entities;
 import it.epicode.demo.entities.Enums.Luoghi;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 
+@EqualsAndHashCode(callSuper = true)
 @Entity
 @Table(name = "eventi")
 @Data

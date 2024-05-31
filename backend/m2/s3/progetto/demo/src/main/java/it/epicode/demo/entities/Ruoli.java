@@ -8,10 +8,10 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table (name="ruoli")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Table (name="ruoli")
 @EqualsAndHashCode(callSuper = true)
 public class Ruoli extends Base{
     private String nome;
