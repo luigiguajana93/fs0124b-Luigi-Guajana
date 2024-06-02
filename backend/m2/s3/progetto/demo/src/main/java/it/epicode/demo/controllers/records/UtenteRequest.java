@@ -8,6 +8,10 @@ public record UtenteRequest(
         @NotBlank
         @NotNull(message = "Nome è obbligatorio")
         String nome,
+        @NotNull(message = "Email obbligatoria")
+        String email,
+        @NotNull(message = "Password è obbligatoria")
+        String password,
         @NotNull(message = "Ruolo è obbligatorio")
-        Long ruoloId){
+        Long ruoloid) {
 }

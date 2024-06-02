@@ -18,15 +18,16 @@ public class UtenteService {
 
     @Autowired
     UtenteRepository utente;
-
     @Autowired
     RuoliRepository ruoli;
 
+
     public Utente save(UtenteRequest u){
-        Ruoli r = ruoli.findById(u.ruoloId()).orElseThrow(() -> new RuntimeException("ruolo non c'è"));
-        var ut = Utente.builder().withNome(u.nome()).withRuolo(r).build();
+        Ruoli r = ruoli.findById(u.ruoloid()).orElseThrow(() -> new RuntimeException("ruolo non c'è"));
+        var ut = Utente.builder().withNome(u.nome()).withEmail(u.email()).withPassword(u.password()).withRuolo(r).build();
         return utente.save(ut);
     }
+
 
 
 }

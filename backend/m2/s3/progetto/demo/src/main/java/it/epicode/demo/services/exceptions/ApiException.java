@@ -1,4 +1,4 @@
-package it.epicode.demo.controllers.exceptions;
+package it.epicode.demo.services.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.ObjectError;
